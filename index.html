@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MacBook page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+    * {
+      font-family: 'Gowun Dodum', sans-serif;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    button.btn:focus {
+      border: none;
+      outline: none;
+    }
+
+    nav {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+
+      background-color: black;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .banner {
+      background-image: url('https://cdn.thelec.kr/news/photo/202202/15994_14379_4741.png');
+      background-position: center;
+      background-size: cover;
+      height: 600px;
+    }
+
+    .mycards {
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+
+      background-color: black;
+
+      margin-bottom: 50px;
+    }
+
+    .btn {
+      color: white;
+    }
+
+    .content {
+      margin-top: 200px;
+    }
+
+    .content>button {
+      margin-right: 100px;
+      margin-left: 100px;
+      margin-bottom: 20px;
+    }
+
+    .btn1 {
+      height: 200px;
+      margin-right: 80px;
+    }
+
+    .btn2 {
+      height: 200px;
+      margin-right: 60px;
+    }
+
+    .main_text {
+      margin-left: 160px;
+      width: 1300px;
+      font-weight: 800;
+      color: white;
+    }
+
+    hr {
+      color: white;
+    }
+
+    .main {
+      margin-top: 150px;
+      margin-left: 410px;
+    }
+
+    .btn3 {
+      margin-left: -15px;
+    }
+
+    .btn4 {
+      margin-left: 340px;
+    }
+
+    .btn5 {
+      height: 200px;
+      margin-left: -100px;
+    }
+
+    .btn6 {
+      height: 200px;
+      margin-left: 210px;
+    }
+
+    .detail {
+      width: 1200px;
+      margin: 100px auto 100px auto;
+    }
+
+
+    .q {
+      color: white;
+      text-align: center;
+      /* margin: 20px auto 20px auto; */
+
+      margin-bottom: 100px;
+    }
+
+    .img1{
+      width: 100px;
+      height: 90px;
+      filter: invert(100%);
+    }
+
+    .w {
+      margin-top: -5px;
+      width: 200px;
+      height: 97px;
+      filter: invert(100%);
+    }
+
+
+    .a {
+      width: 200px;
+      color: white;
+      margin: 150px auto 10px 50px;
+    }
+
+    .q1 {
+      color: white;
+      margin: 100px auto 100px auto;
+    }
+
+    .d0 {
+      padding: 100px 100px 100px auto;
+    }
+
+    .d1 {
+      padding: 100px auto 100px 100px;
+    }
+
+
+    .z {
+
+      text-align: center;
+    }
+
+    .logo {
+      width: 35px;
+
+      margin-top: -7px;
+    }
+
+    
+
+    .img {
+      filter: invert(100%);
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="p-3 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2 text-danger"><img class="logo"
+                src="https://cdn.imweb.me/thumbnail/20220908/9ee8ddcfb5039.png"></a></li>
+          <li><a href="detail_Air.html" class="nav-link px-2 text-white">MacBook Air</a></li>
+          <li><a href="detail_Pro.html" class="nav-link px-2 text-white">MacBook Pro</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">비교하기</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+      <div class="container-fluid py-5">
+      </div>
+    </div>
+  </div>
+
+  <div class="mycards">
+    <div class="content">
+      <button type="button" class="btn">Macbook Air 13(M1 모델)</button>
+      <button type="button" class="btn">Macbook Pro 16(M3 Pro 또는 M3 Max 모델)</button>
+    </div>
+
+    <div class="mycards">
+      <div class="content2">
+        <button type="button" class="btn"><img class="btn1"
+            src="https://www.apple.com/v/macbook-air/q/images/overview/compare/compare_mba_m1__dsgh2hoxlkae_large_2x.png"></button>
+        <button type="button" class="btn"><img class="btn2"
+            src="https://www.apple.com/v/macbook-pro/aj/images/overview/contrast/product_tile_mbp_14_16__br3iijc0eys2_large_2x.png"></button>
+      </div>
+    </div>
+  </div>
+  <!-- <div class=z>
+      <div class="box-wrap"></div>
+      <h1>
+        <class="a">Macbook Air 13(M1 모델)</button>
+          <button type="button" class="btn btn-outline-light me-2"> Macbook Pro 16(M3 Pro 또는 M3 Max 모델)</button>
+      </h1>
+    </div> -->
+
+
+  <div class="main_text">
+    <h1>비교하기</h1>
+    <hr>
+  </div>
+
+  <div class="main">
+    <div class="content2">
+      <button type="button" class="btn"><img class="btn5"
+          src="https://www.apple.com/v/macbook-air/q/images/overview/compare/compare_mba_m1__dsgh2hoxlkae_large_2x.png"></button>
+      <button type="button" class="btn"><img class="btn6"
+          src="https://www.apple.com/v/macbook-pro/aj/images/overview/contrast/product_tile_mbp_14_16__br3iijc0eys2_large_2x.png"></button>
+    </div>
+
+    <div class="content3">
+      <button type="button" class="btn btn3">Macbook Air 13(M1 모델)</button>
+      <button type="button" class="btn btn4">Macbook Pro 16(M3 Pro 또는 M3 Max 모델)</button>
+    </div>
+  </div>
+
+  <div class="detail">
+    <div class="row row-cols-1 row-cols-md-2 g-2">
+      <div>
+        <div class="q">
+          <h2>33.7cm</h2>
+          <p>Retina 디스플레이</p>
+        </div>
+
+        <div class="q">
+          <img class="img1" src="https://ifh.cc/g/kF4CgA.png">
+          <p>Apple M1 칩</p>
+        </div>
+
+        <div class="q">
+          <h1>8코어</h1>
+          <p>cpu</p>
+        </div>
+
+        <div class="q">
+          <h1>7코어</h1>
+          <p>gpu</p>
+        </div>
+
+        <div class="q">
+          <p>최대</p>
+          <h1>16GB</h1>
+          <p>통합 메모리</p>
+        </div>
+
+        <div class="q">
+          <p>최대</p>
+          <h1>2TB</h1>
+          <p>저장 장치</p>
+        </div>
+
+        <div class="q">
+          <p>최대</p>
+          <h1>18시간</h1>
+          <p>배터리 사용 시간</p>
+        </div>
+
+        <div class="q">
+          <img class="img" src="https://ifh.cc/g/W878Bx.png">
+          <p>Touch ID</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="q">
+          <h2>41.0cm</h2>
+          <p>Liquid Retina XDR 디스플레이</p>
+        </div>
+
+        <div class="q">
+          <div>
+            <img class="w" src="https://ifh.cc/g/ZtpOLk.png">
+            <p>Apple M3 Pro 칩 또는 Apple M3 Max 칩</p>
+          </div>
+        </div>
+
+        <div class="q">
+          <p>최대</p>
+          <h1>16코어</h1>
+          <p>cpu</p>
+        </div>
+
+        <div class="q">
+          <p>최대</p>
+          <h1>40코어</h1>
+          <p>gpu</p>
+        </div>
+
+        <div>
+          <div class="q">
+            <p>최대</p>
+            <h1>128GB</h1>
+            <p>통합 메모리</p>
+          </div>
+        </div>
+
+        <div class="q">
+          <p>최대</p>
+          <h1>8TB</h1>
+          <p>저장 장치</p>
+        </div>
+
+        <div class="q">
+          <p>최대</p>
+          <h1>22시간</h1>
+          <p>배터리 사용 시간</p>
+        </div>
+
+        <div>
+          <div class="q">
+            <img class="img" src="https://ifh.cc/g/W878Bx.png">
+            <p>Touch ID</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook Air</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav {
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+            background-color: inherit;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .logo {
+            width: 35px;
+
+            margin-top: -7px;
+        }
+
+        .wrap {
+            background-color: black;
+        }
+
+        .header_text {
+            margin-top: 100px;
+            margin-bottom: 70px;
+            text-align: center;
+            color: #cccccc;
+        }
+
+        .heder_text>p {
+            font-size: 1.15em;
+        }
+
+        .header {
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            background-image:
+                url("https://www.apple.com/v/macbook-air/q/images/overview/macbook_air_m1__dxctrdvvxm4i_small_2x.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .sub_text {
+            margin: 0 auto 200px auto;
+            color: #cccccc;
+            text-align: center;
+        }
+
+        .sub_text>h1 {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 600;
+            margin-bottom: 60px;
+        }
+
+
+        .sub_text>h3 {
+            margin-top: 60px;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .chip_text {
+            width: 540px;
+
+            margin-left: 200px;
+            margin-bottom: 50px;
+        }
+
+        .chip_text>h1 {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .chip_text>p {
+            font-size: 1.15em;
+            margin-left: 10px;
+        }
+
+        .sub_logo {
+            margin-bottom: 10px;
+        }
+
+        .chip_img {
+            margin-left: -120px;
+        }
+
+
+        .chip {
+            margin-bottom: 20px;
+            color: #cccccc;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+
+        .cpu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: #cccccc;
+            margin-bottom: 200px;
+        }
+
+        .cpu_text {
+            text-align: end;
+            width: 520px;
+            margin-left: 200px;
+        }
+
+        .cpu_text>h5 {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .cpu_text>h1 {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .cpu_text>p {
+            color: #cccccc;
+            font-size: 1.15em;
+            margin-bottom: 10px;
+        }
+
+        .cpu_image>img {
+            width: 500px;
+            margin-left: -180px;
+            margin-top: 300px;
+        }
+
+        .gpu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: #cccccc;
+        }
+
+        .gpu_text {
+            width: 520px;
+            margin-left: 200px;
+        }
+
+        .gpu_image>img {
+            width: 500px;
+            margin-bottom: 100px;
+            margin-left: 200px;
+        }
+
+
+        .gpu_text>h5 {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .gpu_text>h1 {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .gpu_text>p {
+            font-size: 1.15em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 text-danger"><img class="logo"
+                                src="https://cdn.imweb.me/thumbnail/20220908/9ee8ddcfb5039.png"></a></li>
+                    <li><a href="detail_Air.html" class="nav-link px-2 text-white">MacBook Air</a></li>
+                    <li><a href="detail_Pro.html" class="nav-link px-2 text-white">MacBook Pro</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">비교하기</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrap">
+        <div class="header_text">
+            <h6>M1칩 탑재 13 모델</h6>
+            <h1>MacBook Air</h1>
+            <p>이동 중에도 작업하기 좋은
+                <br>가장 부담 없는 Mac 노트북.
+            </p>
+        </div>
+        <div class="header">
+        </div>
+    </div>
+
+    <div class="sub_header">
+        <div class="sub_text">
+            <h1>Air의 흐름을 바꾸다.</h1>
+            <p>M1 칩을 탑재한 MacBook Air는 탁월한 휴대성을 자랑하는 노트북입니다.</p>
+            <p>민첩하고 빠른 성능에 조용한 팬리스 디자인 그리고 아름다운 Retina 디스플레이를 갖추고 있죠.</p>
+            <p>얇은 두께와 온종일 가는 배터리 덕분에 MacBook Air는 어디든 가볍고 빠르게 들고 다닐 수 있습니다.</p>
+
+            <h3>막강한 성능의 Apple M1 칩 탑재</h3>
+        </div>
+    </div>
+
+    <div class="chip">
+        <div class="chip_text">
+            <img class="sub_logo"
+                src="https://www.apple.com/v/macbook-air-m1/f/images/overview/m1_eyebrow__dp0aixbj1pg2_small.png"
+                alt="">
+            <h1>칩 하나에 담은 거대한 도약.</h1>
+            <p>
+                M1 칩은 Mac용으로 Apple에서 직접 디자인한 최초의 칩입니다
+                Apple Silicon은 자그마한 칩 하나에 CPU, GPU, Neural Engine,
+                I/O 등 수많은 요소가 통합되어 있죠, 160억 개라는 엄청난 수의
+                트랜지스터가 집적된 M1 칩은 발군의 성능과 맞춤형 기술, 믿을 수 없는
+                전력 효율성을 선사합니다. 가히 Mac 개발에 있어 획기적인 도약이라
+                할 수 있죠.
+                <img class="chip_img" src="https://www.apple.com/v/macbook-air-m1/f/images/overview/apple_silicon_endframe__forvi6ykwn6m_small.jpg"
+                    alt="">
+            </p>
+        </div>
+    </div>
+
+    <div class="cpu">
+        <div class="cpu_image">
+            <img src="https://www.apple.com/v/macbook-air-m1/f/images/overview/machine_learning__d8u6dxf5xawm_large_2x.png"
+                alt="">
+        </div>
+        <div class="cpu_text">
+            <h5>CPU</h5>
+            <h1>8코어 CPU
+                <br>작업은 적극적으로.
+                <br>배터리 소모는
+                <br>소극적으로.
+            </h1>
+            <p>
+                M1 칩의 CPU는 단순히 속도만 놀랍도록 빠른 것이 아닙니다.
+                <br>고성능 코어와 효율 코어 간 밸런스를 조절해 전에 비해 훨씬 적은
+                <br>에너지로 일상적인 일들을 순식간에 처리해내죠. 그 엄청난 처리
+                <br>능력으로 MacBook Air는 전문가급 동영상 편집이나 액션 가득한
+                <br>최신 게임처럼 높은 사양이 필요한 작업도 척척 해낼 수 있답니다.
+            </p>
+        </div>
+    </div>
+
+    <div class="gpu">
+        <div class="gpu_text">
+            <h5>GPU</h5>
+            <h1>7코어 GPU
+                <br>즐길 땐 화려하게.
+                <br>일할 땐 놀랍게.
+            </h1>
+            <p>
+                M1 칩의 GPU는 전광석화처럼 빠른 통합 그래픽 성능을 선사합니다. 덕분에
+                원본 품질 그대로 4K 동영상 스트림 여러 개를 동시에 제작 및 편집하고, 프레임
+                저하 없이 매끄럽게 재생할 수 있죠.
+            </p>
+        </div>
+        <div class="gpu_image">
+            <img src="https://www.apple.com/v/macbook-air-m1/f/images/overview/processor__gb8d1ide5126_large_2x.png"
+                alt="">
+        </div>
+    </div>
+
+
+</body>
+
+</html>

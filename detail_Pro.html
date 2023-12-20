@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--css-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav {
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+            background-color: inherit;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .logo {
+            width: 35px;
+
+            margin-top: -7px;
+        }
+
+        .wrap {
+            background-color: black;
+        }
+
+        .header_text {
+            margin-top: 100px;
+            margin-bottom: 70px;
+            text-align: center;
+            color: #cccccc;
+        }
+
+        .header_text>p {
+            font-size: 1.15em;
+        }
+
+        .header {
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            background-color: black;
+            background-image:
+                url('https://www.apple.com/v/macbook-air/q/images/overview/macbook_air_m1__dxctrdvvxm4i_large_2x.jpg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .chip_text {
+            width: 520px;
+
+            margin-left: 220px;
+            margin-bottom: 50px;
+        }
+
+        .chip_text>h1 {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #cccccc;
+        }
+
+        .chip_text>p {
+            color: #cccccc;
+            font-size: 1.15em;
+        }
+
+        .chip {
+            height: 650px;
+            margin-bottom: 100px;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+
+            font-size: 28px;
+            font-weight: 600;
+            background-color: inherit;
+        }
+
+
+
+
+        .M3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 300px;
+            height: auto;
+            background-color: inherit;
+
+            text-align: center;
+            color: #43B9B9;
+        }
+
+        .M3>img {
+            width: 120px;
+            margin-bottom: 30px;
+        }
+
+        .m3>li {
+            margin-bottom: 50px;
+        }
+
+
+        .M3_Pro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 300px;
+            height: auto;
+
+            text-align: center;
+            color: #2997FF;
+        }
+
+        .M3_Pro>img {
+            width: 120px;
+            margin-bottom: 30px;
+        }
+
+        .pro>li {
+            margin-bottom: 50px;
+        }
+
+        .M3_Max {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 300px;
+            height: auto;
+
+            text-align: center;
+            color: #A972FF;
+        }
+
+        .M3_Max>img {
+            width: 120px;
+            margin-bottom: 50px;
+        }
+
+        .max>li {
+            margin-bottom: 50px;
+        }
+
+        .hardware {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 560px;
+            margin-left: 220px;
+            margin-bottom: 200px;
+        }
+
+        .hardware_text>h1 {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #cccccc;
+        }
+
+        .hardware_text>p {
+            color: #cccccc;
+            font-size: 1.15em;
+            margin-bottom: 50px;
+        }
+
+        .hardware_img>img {
+            width: 800px;
+
+            margin-left: 400px;
+        }
+
+        .always {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .always_text {
+            text-align: end;
+            width: 520px;
+            margin-left: 860px;
+        }
+
+        .always_text>h1 {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #cccccc;
+        }
+
+        .always_text>p {
+            color: #cccccc;
+            font-size: 1.15em;
+            margin-bottom: 10px;
+        }
+
+        .always_img>img {
+            width: 720px;
+
+            margin-left: 200px;
+            margin-bottom: 200px;
+        }
+
+        .improved {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .improved_text {
+            width: 520px;
+            margin-left: 200px;
+        }
+
+        .improved_text>h1 {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #cccccc;
+        }
+
+        .improved_text>p {
+            color: #cccccc;
+            font-size: 1.15em;
+            margin-bottom: 50px;
+        }
+
+        .improved_img>img {
+            width: 720px;
+
+            margin-left: 450px;
+            margin-bottom: 100px;
+        }
+    </style>
+
+    <title>MacBook Pro</title>
+
+</head>
+
+<body>
+    <nav class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 text-danger"><img class="logo"
+                                src="https://cdn.imweb.me/thumbnail/20220908/9ee8ddcfb5039.png"></a></li>
+                    <li><a href="detail_Air.html" class="nav-link px-2 text-white">MacBook Air</a></li>
+                    <li><a href="detail_Pro.html" class="nav-link px-2 text-white">MacBook Pro</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">비교하기</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrap">
+        <div class="header_text">
+            <h6>M3칩 탑재 16 모델</h6>
+            <h1>MacBook Pro</h1>
+            <p>막대한 워크플로도 너끈히 처리하는 가장 앞선 Mac 노트북.</p>
+        </div>
+
+        <div class="header">
+        </div>
+    </div>
+
+    <div class="CHIP">
+        <div class="chip_text">
+            <h1>세 발짝 성큼 앞서다.</h1>
+            <p>
+                MacBook Pro가 M3, M3 Pro, M3 Max 칩과 함께 훌쩍 도약합니다. 3나노미터 기술로 제작된 데다 완전히 새로운 GPU 아키텍처까지 갖춘 M3 시리즈는 이제껏 개발된
+                PC용 칩들 중 가장 앞선 칩입니다. 세 가지 모두 더욱더 프로다운 성능과 역량을 뿜어내죠.
+            </p>
+        </div>
+
+        <div class="chip">
+            <div class="M3">
+                <img
+                    src="https://www.apple.com/v/macbook-pro/aj/images/overview/themes/performance/mx__7nkrkdxhdzma_medium_2x.jpg">
+
+                <ul class="m3">
+                    <li>
+                        <p>8코어<br>CPU</p>
+                    </li>
+                    <li>
+                        <p>10코어<br>GPU</p>
+                    </li>
+                    <li>
+                        <p>최대 24GB<br>통합 메모리</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="M3_Pro">
+                <img
+                    src="https://www.apple.com/v/macbook-pro/aj/images/overview/themes/performance/mx_pro__4183istr5f6u_medium_2x.jpg">
+
+                <ul class="pro">
+                    <li>
+                        <p>최대<br>12코어 CPU</p>
+                    </li>
+                    <li>
+                        <p>최대<br>18코어 GPU</p>
+                    </li>
+                    <li>
+                        <p>최대<br>36GB 통합 메모리</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="M3_Max">
+                <img
+                    src="https://www.apple.com/v/macbook-pro/aj/images/overview/themes/performance/mx_max__fbgblbhbf6ai_medium_2x.jpg">
+
+                <ul class="max">
+                    <li>
+                        <p>최대<br>16코어 CPU</p>
+                    </li>
+                    <li>
+                        <p>최대<br>40코어 GPU</p>
+                    </li>
+                    <li>
+                        <p>최대<br>128GB 통합 메모리</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="hardware">
+        <div class="hardware_text">
+            <h1>하드웨어 가속형 레이 트레이싱.</h1>
+            <p>MacBook Pro에 사상 최초로 하드웨어 가속형 레이 트레이싱 기술이
+                탑재되었습니다. 여기에 새로운 그래픽 아키텍처까지 더해져 프로용 앱 사용 시 최대
+                2.5배 더 빨라진 렌더링 성능을 선사하고, 게임 플레이 시 그림자 및 반사 효과를
+                한층 사실적으로 표현해 줍니다.
+            </p>
+        </div>
+        <div class="hardware_img">
+            <img
+                src="https://www.apple.com/v/macbook-pro/aj/images/overview/themes/performance/mbp_16_screen_graphics_endframe__fb6jcc3o1aye_large_2x.jpg">
+        </div>
+    </div>
+
+    <div class="always">
+        <div class="always_text">
+            <h1>하루 종일 실력 발휘.</h1>
+            <p>
+                Mac 사상 가장 긴 배터리 사용 시간을 자랑하는 MacBook Pro. 한 번 충전으로
+                최대 22시간까지 사용이 가능한 이 뛰어난 효율성은 Apple Silicon이 선사하는
+                마법에서 비롯됩니다. 그리고 모든 모델이 전원 연결 여부와 상관없이 한결같이 빠른
+                속도를 유지하죠. 퍼뜩 영감이 떠오를 때도, 급하게 업무를 처리해야 할 때도, 언제
+                어디서든 그 마법의 힘을 빌려보세요.
+            </p>
+        </div>
+
+        <div class="always_img">
+            <img
+                src="https://www.apple.com/v/macbook-pro/aj/images/overview/themes/performance/mbp_16_screen_battery_endframe__ez8pox0tqtkm_medium_2x.jpg">
+        </div>
+    </div>
+
+    <div class="improved">
+        <div class="improved_text">
+            <h1>앱 전체의 성능 향상.</h1>
+            <p>M3 칩은 macOS 및 Apple Silicon의 힘을 오롯이 활용할 수 있도록 최적화된
+                수천 가지 앱들이 역대급 성능을 발휘할 수 있도록 해줍니다. 자주 쓰는 생산성
+                앱부터 최애 게임, 리소스 사용량이 가장 많은 프로용 앱까지, 다양한 앱에 날개를
+                달아주죠.
+            </p>
+            <div class="improved_img">
+                <img
+                    src="https://www.apple.com/kr/macbook-pro/aj/images/overview/themes/performance/pro_apps_software_development__b72dk94g8k4i_medium_2x.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
